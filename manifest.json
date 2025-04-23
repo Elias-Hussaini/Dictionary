@@ -1,0 +1,21 @@
+{
+    "name": "دیکشنری فارسی-آلمانی",
+    "short_name": "Fa-De Dict",
+    "description": "دیکشنری دوطرفه فارسی به آلمانی و آلمانی به فارسی",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a6fa5",
+    "icons": [
+        {
+            "src": "images/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

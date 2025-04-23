@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیکشنری فارسی-آلمانی پیشرفته</title>
+    <meta name="description" content="دیکشنری دوطرفه فارسی به آلمانی و آلمانی به فارسی">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 دیکشنری هوشمند فارسی-آلمانی</h1>
+            <div class="language-toggle">
+                <button id="fa-de" class="active">فارسی → آلمانی</button>
+                <button id="de-fa">آلمانی → فارسی</button>
+            </div>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="لغت مورد نظر را وارد کنید...">
+            <button id="search-btn">جستجو</button>
+        </div>
+
+        <div class="result-container">
+            <div id="word-result"></div>
+            <div id="examples"></div>
+        </div>
+
+        <div class="add-word-form">
+            <h2>➕ اضافه کردن لغت جدید</h2>
+            <div class="form-group">
+                <label for="new-fa">لغت فارسی:</label>
+                <input type="text" id="new-fa">
+            </div>
+            <div class="form-group">
+                <label for="new-de">لغت آلمانی:</label>
+                <input type="text" id="new-de">
+            </div>
+            <div class="form-group">
+                <label for="new-example">مثال (اختیاری):</label>
+                <textarea id="new-example"></textarea>
+            </div>
+            <button id="add-word-btn">ذخیره لغت</button>
+        </div>
+
+        <div class="stats">
+            <p>تعداد لغات ذخیره شده: <span id="word-count">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

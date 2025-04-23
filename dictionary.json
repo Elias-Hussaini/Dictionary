@@ -1,0 +1,22 @@
+{
+    "fa-de": {
+        "سلام": {
+            "translation": "Hallo",
+            "example": "سلام، حالتون خوبه؟ - Hallo, wie geht's?"
+        },
+        "خداحافظ": {
+            "translation": "Auf Wiedersehen",
+            "example": "خداحافظ تا فردا - Auf Wiedersehen bis morgen"
+        }
+    },
+    "de-fa": {
+        "hallo": {
+            "translation": "سلام",
+            "example": "Hallo, wie geht's? - سلام، حالتون خوبه؟"
+        },
+        "auf wiedersehen": {
+            "translation": "خداحافظ",
+            "example": "Auf Wiedersehen bis morgen - خداحافظ تا فردا"
+        }
+    }
+}
