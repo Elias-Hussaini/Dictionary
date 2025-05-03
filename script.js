@@ -181,3 +181,23 @@ document.addEventListener('DOMContentLoaded', () => {
     loadDictionary();
     changeDirection('fa-de');
 });
+// تابع نمایش لغت تصادفی
+function showRandomWord() {
+    const words = Object.keys(dictionary[currentDirection]);
+    if (words.length === 0) {
+        wordResult.textContent = "هیچ لغتی برای مرور وجود ندارد!";
+        examplesDiv.textContent = "";
+        return;
+    }
+    const randomIndex = Math.floor(Math.random() * words.length);
+    const randomWord = words[randomIndex];
+    const wordData = dictionary[currentDirection][randomWord];
+    
+    wordResult.innerHTML = `<strong>${randomWord}:</strong> ${wordData.translation}`;
+    examplesDiv.innerHTML = wordData.example ? 
+        `<strong>مثال:</strong> ${wordData.example}` : 
+        "مثالی برای این لغت وجود ندارد.";
+}
+
+// رویداد کلیک دکمه
+document.getElementById('random-word-btn').addEventListener('click', showRandomWord);

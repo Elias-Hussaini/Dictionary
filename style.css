@@ -198,3 +198,13 @@ textarea {
 [dir="rtl"] #suggestions {
     text-align: right;
 }
+#random-word-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 15px;
+    background-color: #6a4caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
